@@ -1,5 +1,24 @@
 .App {
+  color: white;
+  background-color: #282c34;
   text-align: center;
+}
+
+.App-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.App-menu_item {
+  width: 100px;
+  background: gray;
+  height: 30px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .App-logo {
@@ -14,7 +33,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +53,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*Menu*/
+.menuItem a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 22px;
+
+}
+
+/*.menuItem a:active {*/
+/*  color: black*/
+
+/*}*/
+
+.menu-item_active {
+  color: chartreuse !important;
+  font-family: monospace !important;
+  font-size: 26px !important;
+  padding-bottom: 20px;
+}
+
+
+/*UseState*/
+.useState_container {
+  width: 800px;
+  height: 790px;
 }

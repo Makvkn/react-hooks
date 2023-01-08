@@ -1,23 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {createContext, useState} from 'react';
 import './App.css';
+import Menu from "./components/menu/Menu";
+import {Route, Routes} from "react-router-dom";
+import UseState from "./pages/hooks/useState/UseState";
+import UseEffect from "./pages/UseEffect";
+
 
 function App() {
+
   return (
     <div className="App">
+        <Menu />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Routes>
+            <Route path="/useState" element={<UseState/>}/>
+            <Route path="/useEffect" element={<UseEffect/>}/>
+        </Routes>
       </header>
     </div>
   );
