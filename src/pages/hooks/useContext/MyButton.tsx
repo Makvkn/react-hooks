@@ -1,13 +1,17 @@
-import React, {FC} from 'react';
+import React, {FC, useContext} from 'react';
+import {MessContextProvider, MessContext} from "./Context";
 
 interface lol {
     change: React.MouseEventHandler<HTMLButtonElement>
 }
 
-const MyButton: FC<lol> = (props: lol) => {
+const MyButton: FC = () => {
+
+    const butt = useContext<any>(MessContext)
+
     return (
         <div>
-            <button onClick={props.change}>Show Alert</button>
+            <button onClick={butt.changeMess}>Show Alert</button>
         </div>
     );
 };

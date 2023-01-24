@@ -1,24 +1,21 @@
-import React, {FC, useState} from 'react';
+import React, {useState} from 'react';
 import MyButton from "./MyButton";
 import MyAlert from "./MyAlert";
+import {MessContextProvider} from "./Context";
 
 const Main = () => {
 
-    const [showMess, setShowMess] = useState(false)
-    let lol = 'Hello from UseContext'
 
-    const changeMess = () => {
-        setShowMess(prev => prev = !prev)
-    }
+
 
     return (
-        <div>
-            <MyButton change={changeMess} />
-            <MyAlert mess={showMess} str={lol} />
-
-
-        </div>
-    );
+        <MessContextProvider>
+    <div>
+        <MyButton />
+        <MyAlert />
+    </div>
+        </MessContextProvider>
+);
 };
 
 export default Main;
