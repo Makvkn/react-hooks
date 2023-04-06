@@ -7,6 +7,7 @@ import UseEffect from "./pages/hooks/useEffect/UseEffect";
 import Main from "./pages/hooks/useContext/Main";
 import OurHooks from "./pages/hooks/ourHooks/OurHooks";
 import UseReducer from "./pages/hooks/useReducer/UseReducer";
+import UseRef from "./pages/hooks/useRef/useRef";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/useContext" element={<Main/>}/>
             <Route path="/ourHooks" element={<OurHooks/>}/>
             <Route path="/useReducer" element={<UseReducer/>}/>
+            <Route path="/useRef" element={<UseRef/>}/>
         </Routes>
       </header>
     </div>
