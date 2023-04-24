@@ -2,7 +2,7 @@ import React from 'react';
 
 interface alert {
     mess: boolean;
-    str: string
+    str: string;
 }
 
 

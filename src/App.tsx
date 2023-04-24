@@ -6,8 +6,8 @@ import UseState from "./pages/hooks/useState/UseState";
 import UseEffect from "./pages/UseEffect";
 import Main from "./pages/hooks/useContext/Main";
 
-function App() {
 
+function App() {
   return (
     <div className="App">
         <Menu />

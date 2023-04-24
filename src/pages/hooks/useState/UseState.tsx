@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
 import UseStateItem from "./useStateItem";
 import {ITodo} from "./types";
-
+//UseState
 const UseState = () => {
 
     const [value, setValue] = useState<string>('')
     const [todo, setTodo] = useState<ITodo[]>([
-        {id: 1, title: "Dream", checked: true},
+        {id: 1, title: "Work", checked: true},
+        {id: 2, title: "Learn", checked: true},
         {id: 2, title: "Work", checked: true},
-        {id: 3, title: "Enjoy", checked: false}
+        {id: 3, title: "Enjoy life", checked: false}
     ])
+
 
     const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
 
