@@ -1,19 +1,26 @@
 import {createContext, useContext, useState} from "react";
 
- export const MessContext = createContext<any>({})
 
+export const MessContext = createContext<any>(null)
 
+export const MessContextProvider = ({children}: any) => {
+    const [theme, setTheme] = useState<string>("light");
 
-export const MessContextProvider: any = ({children}: any) => {
+    const [showMess, setShowMess] = useState(false)
+    let meStr = 'Hello from UseContext'
 
-    // const [messing, setMessing] = useState<string>('false')
+    const changeMess: any = () => {
+        setShowMess(prev => prev = !prev)
+    }
 
-    <MessContext.Provider  value={children} >
-    {children}
-    </MessContext.Provider>
-
-
-
-
+    return (
+        <MessContext.Provider value={{
+            showMess,
+            changeMess,
+            meStr
+        }}>
+            {children}
+        </MessContext.Provider>
+    )
 }
 
