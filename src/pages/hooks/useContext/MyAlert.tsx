@@ -3,7 +3,7 @@ import {MessContext} from "./Context";
 
 interface alert {
     mess: boolean;
-    str: string
+    str: string;
 }
 
 

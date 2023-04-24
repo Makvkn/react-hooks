@@ -9,8 +9,8 @@ import OurHooks from "./pages/hooks/ourHooks/OurHooks";
 import UseReducer from "./pages/hooks/useReducer/UseReducer";
 import UseRef from "./pages/hooks/useRef/useRef";
 
-function App() {
 
+function App() {
   return (
     <div className="App">
         <Menu />

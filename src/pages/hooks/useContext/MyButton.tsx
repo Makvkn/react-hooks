@@ -2,7 +2,7 @@ import React, {FC, useContext} from 'react';
 import {MessContextProvider, MessContext} from "./Context";
 
 interface lol {
-    change: React.MouseEventHandler<HTMLButtonElement>
+    change: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const MyButton: FC = () => {
